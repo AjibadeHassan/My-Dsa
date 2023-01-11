@@ -30,6 +30,20 @@ class linkedList {
         this.size++
     }
 
+    append(value){
+        const node = new Node(value)
+        if(this.isEmpty()){
+            this.head = node;
+        } else {
+            let curr = this.head
+            while(curr.next){
+                curr = curr.next
+            }
+            curr.next = node
+        }
+        this.size ++;
+    }
+
     print(){
         if(this.isEmpty()){
             console.log('this is an empty list')
@@ -48,9 +62,9 @@ class linkedList {
 
 const List = new linkedList()
 
-List.prepend(10)
-List.prepend(20)
-List.prepend(30)
+List.append(10)
+List.append(20)
+List.append(30)
 
 console.log(List.head, List.getSize(), List.isEmpty())
 List.print()
