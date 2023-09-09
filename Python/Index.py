@@ -27,3 +27,28 @@ def randFunction(props):
 
 
 print(randFunction(num_list)) 
+
+
+
+
+# SPACE
+# COMPLEXITY 
+
+# Big O(1) constant
+def display_cubes(items):
+
+    result = pow(items[0], 3) 
+    print(result)
+items = [2,3,4,5,6,7]
+display_cubes(items)
+
+
+# Big O(n) Linear
+
+def all_cubes(values):
+    result = []
+    for item in values:
+        result.append(pow(item,3)) # O(n)
+    print(result)
+values = [2,3,4,5,6,7]
+all_cubes(values)
