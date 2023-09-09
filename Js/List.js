@@ -1,3 +1,20 @@
+
+
+import { resolve } from 'path';
+
+// Specify the filename you want to obtain the path for
+const filename = 'List.js';
+
+// Resolve the file path
+const filePath = resolve(__dirname, filename);
+
+console.log('File Path:', filePath);
+
+
+
+
+
+
 class Node {
     constructor(value){
         this.value = value;
