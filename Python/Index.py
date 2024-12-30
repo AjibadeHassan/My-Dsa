@@ -1,4 +1,5 @@
 #TIME COMPLEXITY
+studentList = ["John", "Jane", "Doe", "Smith", "Doe"]  # O(1)
 def anyFunction(students):
     total = 0  # O(1)
     newlist = []  # O(1)
@@ -10,7 +11,6 @@ def anyFunction(students):
     return total  # O(1)
 
 print(anyFunction(studentList))  # O(5 + 2n)
-
 
 # Big O of n squared
 
