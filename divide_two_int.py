@@ -1,5 +1,5 @@
 class Solution:
-    def divide(self, dividend: int, divisor: int) -> int:
+    def divide(self, dividend, divisor):
         if dividend == divisor:
             return 1
         if dividend == -2**31 and divisor == -1:
