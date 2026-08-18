@@ -1,5 +1,5 @@
 class Solution:
-    def smallestSubsequence(self, s: str) -> str:
+    def smallestSubsequence(self, s):
         freq = Counter(s)
         seen = set()
         stack = []
