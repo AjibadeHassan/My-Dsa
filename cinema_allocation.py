@@ -20,12 +20,12 @@ class Solution:
 
         while r < m:
 
-            # Count completely empty rows
+            
             ans += 2 * (reservedSeats[r][0] - prev - 1)
 
             prev = reservedSeats[r][0]
 
-            # Mark all reserved seats in the current row
+            
             while r < m and reservedSeats[r][0] == reservedSeats[l][0]:
                 reserved[reservedSeats[r][1]] = True
                 r += 1
@@ -41,10 +41,9 @@ class Solution:
 
             l = r
 
-            # Reset for the next row
+        
             reserved = [False] * 11
 
-        # Remaining rows are completely empty
         ans += 2 * (n - prev)
 
         return ans
